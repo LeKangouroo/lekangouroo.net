@@ -43,6 +43,7 @@
     "standard-version": "4.4.0",
     "svg4everybody": "2.1.9",
     "through2": "2.0.3",
+    "typed.js": "2.0.11",
     "urijs": "1.19.1",
     "vue": "2.5.17",
     "webpack": "4.43.0",
