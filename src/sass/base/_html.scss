@@ -6,9 +6,10 @@
 {
   html, body
   {
-    background-color: #FFFFFF;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 4vw;
+    background-color: darken($color-base03, 8%);
+    color: $color-base0;
+    font-family: Inconsolata, monospace;
+    font-size: 5vw;
   }
   html.no-scroll
   {
