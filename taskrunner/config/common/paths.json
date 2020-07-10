@@ -12,8 +12,8 @@
     "js": {
       "default": "src/js/*.js",
       "watch": [
-        "!src/{sections,components}/**/*.scss",
-        "src/{js,sections,components}/**/*"
+        "src/{js,sections,components}/**/*",
+        "!src/{sections,components}/**/*.scss"
       ]
     },
     "sass": {
