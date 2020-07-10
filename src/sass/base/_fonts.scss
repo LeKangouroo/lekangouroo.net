@@ -2,3 +2,8 @@
  *
  * see: https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face
  */
+@font-face
+{
+  font-family: Inconsolata;
+  src: local("Inconsolata"), url("../assets/fonts/Inconsolata/Inconsolata.ttf");
+}
