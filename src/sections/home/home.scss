@@ -4,7 +4,30 @@
 
 .s-home
 {
-  background: pink;
+  padding: 8vw;
+}
+.s-home-message
+{
+  a
+  {
+    color: $color-blue;
+    font-weight: bold;
+    text-decoration: none;
+
+    &[data-type="email"]::before
+    {
+      content: "✉\00A0";
+    }
+
+    &[data-type="download"]::before
+    {
+      content: "📥\00A0";
+    }
+  }
+  strong
+  {
+    color: $color-base2;
+  }
 }
 
 ////////////////////////////////////////////////////////////
@@ -15,7 +38,6 @@
 {
   .s-home
   {
-    background: orange;
   }
 }
 
@@ -27,6 +49,5 @@
 {
   .s-home
   {
-    background: #b8fff5;
   }
 }

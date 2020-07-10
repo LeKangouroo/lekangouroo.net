@@ -6,6 +6,10 @@ export default {
       {
         match: "CACHE_BUST",
         replacement: Date.now()
+      },
+      {
+        match: "EMAIL",
+        replacement: "jobs@lekangouroo.me"
       }
     ],
     "development": [
