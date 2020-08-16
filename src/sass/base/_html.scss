@@ -6,11 +6,16 @@
 {
   :root
   {
-    --color-accent: #{$color-4};
-    --color-background: #{$color-2};
-    --color-cursor: #{$color-4};
-    --color-text: #{$color-3};
-    --color-text-shadow: #{$color-5};
+    --color-accent: #{$theme-accent-color};
+    --color-accent-hover: #{$theme-accent-hover-color};
+    --color-accent-text-shadow: #{$theme-accent-shadow-color};
+    --color-background-1: #{$theme-bg-color-1};
+    --color-background-2: #{$theme-bg-color-2};
+    --color-cursor: #{$theme-cursor-color};
+    --color-text: #{$theme-text-color};
+    --color-text-shadow: #{$theme-text-shadow-color};
+    --color-signature: #{$theme-color-3};
+    --color-signature-text-shadow: #{$theme-signature-text-shadow-color};
 
     background-color: #000000;
     color: var(--color-text);
