@@ -14,7 +14,7 @@ export default {
 
       const options = {
         stringsElement: ".s-home-message-content",
-        typeSpeed: 40
+        typeSpeed: 30
       };
 
       const typed = new Typed('.s-home-message', options);

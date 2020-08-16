@@ -12,7 +12,7 @@
     --color-text: #{$color-3};
     --color-text-shadow: #{$color-5};
 
-    background-color: var(--color-background);
+    background-color: #000000;
     color: var(--color-text);
     font-family: Inconsolata, monospace;
     font-size: 5vw;
@@ -29,7 +29,6 @@
   }
   body
   {
-    padding: 15vw 10vw;
     overflow-x: hidden;
   }
 }
@@ -69,9 +68,5 @@
   :root
   {
     font-size: 22px;
-  }
-  body
-  {
-    padding: 6vw 20vw;
   }
 }
