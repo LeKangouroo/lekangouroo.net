@@ -4,9 +4,6 @@ import template from "./home.html";
 
 export default {
 
-  data: () => ({
-    isNightTime: true // TODO: make this value dynamic
-  }),
   template,
   methods: {
 
