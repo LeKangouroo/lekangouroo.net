@@ -2,7 +2,7 @@ $theme-color-1: #5ec5e3;
 $theme-color-2: #bababa;
 $theme-color-3: #FFF;
 
-$theme-cursor-color: lighten($theme-color-1, 20%);
+$theme-cursor-color: lighten($theme-color-1, 10%);
 
 $theme-bg-color-1: rgba(darken($theme-color-1, 10%), 0.1);
 $theme-bg-color-2: rgba(darken($theme-color-1, 60%), 0.1);
