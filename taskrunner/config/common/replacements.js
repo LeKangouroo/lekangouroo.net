@@ -9,7 +9,7 @@ export default {
       },
       {
         match: "EMAIL",
-        replacement: "jobs@lekangouroo.me"
+        replacement: "jobs@lekangouroo.net"
       }
     ],
     "development": [
