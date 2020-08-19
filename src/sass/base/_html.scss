@@ -24,6 +24,11 @@
     font-size: 5vw;
     text-shadow: 0 0 0.4ch var(--color-text-shadow);
   }
+  html
+  {
+    height: 100%;
+    max-height: 100%;
+  }
   html.no-scroll
   {
     overflow: hidden;
@@ -35,7 +40,8 @@
   }
   body
   {
-    overflow-x: hidden;
+    height: 100%;
+    overflow: hidden;
   }
 }
 @include mobile-landscape-and-up

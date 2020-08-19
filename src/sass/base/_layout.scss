@@ -3,6 +3,10 @@
  * The header, footer and navigation bar are NOT basic layout elements.
  * For complex elements, use the src/sass/components/ directory instead.
  */
+#app
+{
+  height: 100%;
+}
 .l-crt
 {
   background: linear-gradient(
@@ -12,14 +16,10 @@
   );
   background-size: 100% 8px;
   box-shadow: 0 0 20vw inset #000000;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+    z-index: 1;
 
   // Noise
   &::before
@@ -29,15 +29,15 @@
     content: "";
     display: block;
     position: absolute;
-    top: -200%;
-    left: -200%;
-    right: -200%;
-    bottom: -200%;
+      top: -200%;
+      left: -200%;
+      right: -200%;
+      bottom: -200%;
     mix-blend-mode: multiply;
     opacity: 0.15;
   }
 
-  // Scanlines
+  // Scanline
   &::after
   {
     content: "";
@@ -52,9 +52,16 @@
     );
     opacity: 0.1;
     position: absolute;
-    bottom: 100%;
+      bottom: 100%;
     animation: scanline 10s linear infinite;
   }
+}
+.l-crt-container
+{
+  height: 100%;
+  overflow: hidden auto;
+  position: relative;
+    z-index: 2;
 }
 .l-crt-content
 {
@@ -65,7 +72,6 @@
 {
   .l-crt-content
   {
-    padding: 0;
-    width: 60%;
+    padding: 15vw 20vw 5vw;
   }
 }
