@@ -1,12 +1,12 @@
 import { createRouter } from "modules/network/routing";
 import events from "core/events";
 
-const getTitle = sectionName => "@@ENV" === "PRODUCTION"
+const getTitle = (sectionName, env) => env === "PRODUCTION"
   ? `${sectionName} - ${window.location.hostname}`
-  : `[@@ENV] ${sectionName} - ${window.location.hostname}`;
+  : `[${env}] ${sectionName} - ${window.location.hostname}`;
 
 const routes = [
-  { name: "home", uri: "/home", data: { title: getTitle("Accueil") } }
+  { name: "home", uri: "/home", data: { title: getTitle("Accueil", "@@ENV") } }
 ];
 
 const router = createRouter(window, routes);
