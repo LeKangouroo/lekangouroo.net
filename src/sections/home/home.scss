@@ -8,13 +8,11 @@
 }
 .s-home-message
 {
-  mix-blend-mode: overlay;
-
   a
   {
     color: var(--color-accent);
     font-weight: bold;
-    text-shadow: 0 0 0.4ch var(--color-accent-text-shadow);
+    text-shadow: 0 $text-shadow-offset-y $text-shadow-spread var(--color-accent-text-shadow);
     transition: color 0.3s ease, text-shadow 0.3s ease;
   }
   a:hover
@@ -24,7 +22,7 @@
   strong
   {
     color: var(--color-signature);
-    text-shadow: 0 0 0.4ch var(--color-signature-text-shadow);
+    text-shadow: 0 $text-shadow-offset-y $text-shadow-spread var(--color-signature-text-shadow);
   }
 }
 

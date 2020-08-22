@@ -18,11 +18,10 @@
     --color-signature: #{$theme-color-3};
     --color-signature-text-shadow: #{$theme-signature-text-shadow-color};
 
-    background-color: #000000;
     color: var(--color-text);
     font-family: Inconsolata, monospace;
     font-size: 5vw;
-    text-shadow: 0 0 0.4ch var(--color-text-shadow);
+    text-shadow: 0 $text-shadow-offset-y $text-shadow-spread var(--color-text-shadow);
   }
   html
   {

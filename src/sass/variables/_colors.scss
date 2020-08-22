@@ -2,19 +2,19 @@ $theme-color-1: #5ec5e3;
 $theme-color-2: #bababa;
 $theme-color-3: #FFF;
 
-$theme-cursor-color: lighten($theme-color-1, 10%);
+$theme-cursor-color: lighten($theme-color-1, 30%);
 
-$theme-bg-color-1: rgba(darken($theme-color-1, 10%), 0.1);
-$theme-bg-color-2: rgba(darken($theme-color-1, 60%), 0.1);
+$theme-bg-color-1: darken($theme-color-1, 50%);
+$theme-bg-color-2: darken($theme-color-1, 60%);
 
-$theme-text-color: $theme-color-1;
-$theme-text-shadow-color: darken($theme-text-color, 10%);
+$theme-text-color: lighten($theme-color-1, 10%);
+$theme-text-shadow-color: #000;
 
 $theme-accent-color: $theme-color-2;
-$theme-accent-shadow-color: darken($theme-accent-color, 10%);
+$theme-accent-shadow-color: #000;
 $theme-accent-hover-color: lighten($theme-accent-color, 20%);
 
 $theme-signature-color: $theme-color-3;
-$theme-signature-text-shadow-color: darken($theme-signature-color, 10%);
+$theme-signature-text-shadow-color: #000;
 
-$theme-scanline-color: rgba($theme-color-1, 0.3);
+$theme-scanline-color: #000A;
