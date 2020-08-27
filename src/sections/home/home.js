@@ -25,7 +25,7 @@ export default {
       const options = {
         stringsElement: ".s-home-message-content",
         cursorChar: "▮",
-        typeSpeed: 20,
+        typeSpeed: 15,
         onComplete: () => this.disableAutoScroll()
       };
 
