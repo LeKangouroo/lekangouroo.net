@@ -20,17 +20,31 @@ export default {
 
       this.intervalId = window.setInterval(() => this.$refs.content.scrollIntoView(false), 600);
     },
+    enableLinks: function() {
+
+      const links = this.$refs.content.querySelectorAll(".s-home-message-link");
+
+      for (let link of links)
+      {
+        link.classList.add("is-enabled");
+      }
+    },
     init: function() {
 
       const options = {
         stringsElement: ".s-home-message-content",
         cursorChar: "▮",
         typeSpeed: 15,
-        onComplete: () => this.disableAutoScroll()
+        onComplete: () => this.onTypingComplete()
       };
 
       this.enableAutoScroll();
       new Typed('.s-home-message', options);
+    },
+    onTypingComplete: function() {
+
+      this.enableLinks();
+      this.disableAutoScroll();
     }
   },
   mounted()

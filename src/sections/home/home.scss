@@ -8,22 +8,28 @@
 }
 .s-home-message
 {
-  a
-  {
-    color: var(--color-accent);
-    font-weight: bold;
-    text-shadow: 0 $text-shadow-offset-y $text-shadow-spread var(--color-accent-text-shadow);
-    transition: color 0.3s ease, text-shadow 0.3s ease;
-  }
-  a:hover
-  {
-    color: var(--color-accent-hover);
-  }
   strong
   {
     color: var(--color-signature);
     text-shadow: 0 $text-shadow-offset-y $text-shadow-spread var(--color-signature-text-shadow);
   }
+}
+.s-home-message-link
+{
+  color: inherit;
+  cursor: default;
+  text-decoration: inherit;
+  transition: all 0.5s ease-in-out;
+}
+.s-home-message-link.is-enabled
+{
+  color: var(--color-accent);
+  cursor: pointer;
+  text-shadow: 0 $text-shadow-offset-y $text-shadow-spread var(--color-accent-text-shadow);
+}
+.s-home-message-link.is-enabled:hover
+{
+  color: var(--color-accent-hover);
 }
 
 ////////////////////////////////////////////////////////////
