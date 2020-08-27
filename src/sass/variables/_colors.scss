@@ -1,13 +1,13 @@
-$theme-color-1: #5ec5e3;
-$theme-color-2: #d0d0d0;
+$theme-color-1: #1f6374;
+$theme-color-2: #F7AF6D;
 $theme-color-3: #FFF;
 
-$theme-cursor-color: lighten($theme-color-1, 30%);
+$theme-cursor-color: lighten($theme-color-1, 50%);
 
-$theme-bg-color-1: darken($theme-color-1, 50%);
-$theme-bg-color-2: darken($theme-color-1, 60%);
+$theme-bg-color-1: darken($theme-color-1, 15%);
+$theme-bg-color-2: darken($theme-color-1, 18%);
 
-$theme-text-color: lighten($theme-color-1, 10%);
+$theme-text-color: lighten($theme-color-1, 40%);
 $theme-text-shadow-color: #000;
 
 $theme-accent-color: $theme-color-2;
