@@ -49,8 +49,11 @@
 }
 .l-crt-container
 {
+  -webkit-overflow-scrolling: touch;
+
   height: 100%;
-  overflow: hidden auto;
+  overflow: hidden;
+  overflow-y: auto;
   position: relative;
     z-index: 2;
 
