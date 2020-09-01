@@ -16,10 +16,14 @@
 }
 .s-home-message-link
 {
+  --home-message-link-transition-delay: 0.5s;
+  --home-message-link-transition-function: ease-in-out;
+
   color: inherit;
   cursor: default;
   text-decoration: inherit;
-  transition: all 0.5s ease-in-out;
+  transition: color var(--home-message-link-transition-delay) var(--home-message-link-transition-function),
+              text-shadow var(--home-message-link-transition-delay) var(--home-message-link-transition-function);
 }
 .s-home-message-link.is-enabled
 {
