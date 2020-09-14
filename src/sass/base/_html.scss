@@ -1,48 +1,30 @@
-///////////////////////////////////////////////////////////////////
-// Device: Mobile
-///////////////////////////////////////////////////////////////////
-
-@include mobile-portrait-and-up
+:root
 {
-  :root
-  {
-    --color-accent: #{$theme-accent-color};
-    --color-accent-hover: #{$theme-accent-hover-color};
-    --color-accent-text-shadow: #{$theme-accent-shadow-color};
-    --color-background-1: #{$theme-bg-color-1};
-    --color-background-2: #{$theme-bg-color-2};
-    --color-cursor: #{$theme-cursor-color};
-    --color-text: #{$theme-text-color};
-    --color-text-shadow: #{$theme-text-shadow-color};
-    --color-scanline: #{$theme-scanline-color};
-    --color-signature: #{$theme-color-3};
-    --color-signature-text-shadow: #{$theme-signature-text-shadow-color};
-
-    color: var(--color-text);
-    font-family: Inconsolata, monospace;
-    font-size: 5vw;
-    text-shadow: 0 $text-shadow-offset-y $text-shadow-spread var(--color-text-shadow);
-  }
-  html
-  {
-    height: 100%;
-    max-height: 100%;
-  }
-  html.no-scroll
-  {
-    overflow: hidden;
-    position: fixed;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      top: 0;
-  }
-  body
-  {
-    height: 100%;
-    overflow: hidden;
-  }
+  color: var(--color-text);
+  font-family: Inconsolata, monospace;
+  font-size: 5vw;
+  text-shadow: 0 var(--text-shadow-offset-y) var(--text-shadow-spread) var(--color-text-shadow);
 }
+html
+{
+  height: 100%;
+  max-height: 100%;
+}
+html.no-scroll
+{
+  overflow: hidden;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+}
+body
+{
+  height: 100%;
+  overflow: hidden;
+}
+
 @include mobile-landscape-and-up
 {
   :root
@@ -50,11 +32,6 @@
     font-size: 5vh;
   }
 }
-
-///////////////////////////////////////////////////////////////////
-// Device: Tablet
-///////////////////////////////////////////////////////////////////
-
 @include tablet-portrait-and-up
 {
   :root
@@ -69,11 +46,6 @@
     font-size: 2vh;
   }
 }
-
-///////////////////////////////////////////////////////////////////
-// Device: Desktop
-///////////////////////////////////////////////////////////////////
-
 @include desktop
 {
   :root

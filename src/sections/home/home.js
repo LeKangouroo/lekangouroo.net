@@ -1,14 +1,16 @@
 import Typed from "typed.js";
-import events from "core/events";
-import template from "./home.html";
+import events from "core/events.js";
 
 export default {
 
-  template,
+  template: "#home-section-template",
   data: () => ({
 
     intervalId: 0
   }),
+  computed: {
+    email: () => ["jobs", "@", "le", "kangouroo", ".", "net"].join("")
+  },
   methods: {
 
     disableAutoScroll: function() {

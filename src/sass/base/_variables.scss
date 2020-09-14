@@ -1,0 +1,39 @@
+:root
+{
+  $theme-color-1: #1f6374;
+  $theme-color-2: #F7AF6D;
+  $theme-color-3: #FFF;
+
+  /*
+   * Colors
+   */
+  --color-accent: #{$theme-color-2};
+  --color-accent-hover: #{lighten($theme-color-2, 20%)};
+  --color-accent-text-shadow: black;
+  --color-background-1: #{darken($theme-color-1, 15%)};
+  --color-background-2: #{darken($theme-color-1, 18%)};
+  --color-cursor: #{lighten($theme-color-1, 50%)};
+  --color-text: #{lighten($theme-color-1, 40%)};
+  --color-text-shadow: black;
+  --color-scanline: #000A;
+  --color-signature: #{$theme-color-3};
+  --color-signature-text-shadow: black;
+
+  /*
+   * Fonts
+   */
+  --font-emojis: apple color emoji,
+    segoe ui emoji,
+    noto color emoji,
+    android emoji,
+    emojisymbols,
+    emojione mozilla,
+    twemoji mozilla,
+    segoe ui symbol;
+
+  /*
+   * Text
+   */
+  --text-shadow-offset-y: 0.2ch;
+  --text-shadow-spread: 0.1ch;
+}

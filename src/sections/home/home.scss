@@ -1,7 +1,3 @@
-////////////////////////////////////////////////////////////
-// MOBILE
-////////////////////////////////////////////////////////////
-
 .s-home
 {
   height: 100%;
@@ -11,7 +7,7 @@
   strong
   {
     color: var(--color-signature);
-    text-shadow: 0 $text-shadow-offset-y $text-shadow-spread var(--color-signature-text-shadow);
+    text-shadow: 0 var(--text-shadow-offset-y) var(--text-shadow-spread) var(--color-signature-text-shadow);
   }
 }
 .s-home-message-link
@@ -29,16 +25,12 @@
 {
   color: var(--color-accent);
   cursor: pointer;
-  text-shadow: 0 $text-shadow-offset-y $text-shadow-spread var(--color-accent-text-shadow);
+  text-shadow: 0 var(--text-shadow-offset-y) var(--text-shadow-spread) var(--color-accent-text-shadow);
 }
 .s-home-message-link.is-enabled:hover
 {
   color: var(--color-accent-hover);
 }
-
-////////////////////////////////////////////////////////////
-// TABLET
-////////////////////////////////////////////////////////////
 
 @include tablet-portrait-and-up
 {
@@ -46,11 +38,6 @@
   {
   }
 }
-
-////////////////////////////////////////////////////////////
-// DESKTOP
-////////////////////////////////////////////////////////////
-
 @include desktop
 {
   .s-home
