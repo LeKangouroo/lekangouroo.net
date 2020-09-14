@@ -1,12 +1,20 @@
-import { createRouter } from "modules/network/routing";
-import events from "core/events";
+import events from "core/events.js";
 
-const getTitle = (sectionName, env) => env === "PRODUCTION"
+import { createRouter } from "modules/network/routing.js";
+import { getEnvironmentVariables } from "core/dev.js";
+
+const getTitle = (sectionName, env) => env === "production"
   ? `${sectionName} - ${window.location.hostname}`
   : `[${env}] ${sectionName} - ${window.location.hostname}`;
 
 const routes = [
-  { name: "home", uri: "/home", data: { title: getTitle("Accueil", "@@ENV") } }
+  {
+    name: "home",
+    uri: "/home",
+    data: {
+      title: getTitle("Accueil", getEnvironmentVariables().environment)
+    }
+  }
 ];
 
 const router = createRouter(window, routes);
