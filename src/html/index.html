@@ -8,6 +8,9 @@
   <body data-mode="<!-- @echo MODE -->">
     <div id="app" :class="{ 'is-loading': isLoading }">
       <component :is="currentSection"/>
+      <noscript v-pre>
+        <!-- @include ../sections/home/home-noscript.html -->
+      </noscript>
     </div>
     <template id="home-section-template">
       <!-- @include ../sections/home/home.html -->

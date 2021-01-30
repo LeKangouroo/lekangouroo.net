@@ -2,6 +2,7 @@ import argv from "../../modules/argv.js";
 
 const common = {
   CACHE_BUST: Date.now(),
+  EMAIL_CONTACT: "jobs@lekangouroo.net",
   ENV: argv.env,
   MODE: argv.mode
 };

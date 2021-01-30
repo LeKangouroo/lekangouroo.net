@@ -10,6 +10,14 @@
     text-shadow: 0 var(--text-shadow-offset-y) var(--text-shadow-spread) var(--color-signature-text-shadow);
   }
 }
+.s-home-message-container
+{
+  display: none;
+}
+.s-home-message-metadata
+{
+  display: none;
+}
 .s-home-message-link
 {
   --home-message-link-transition-delay: 0.5s;
@@ -21,13 +29,13 @@
   transition: color var(--home-message-link-transition-delay) var(--home-message-link-transition-function),
               text-shadow var(--home-message-link-transition-delay) var(--home-message-link-transition-function);
 }
-.s-home-message-link.is-enabled
+.s-home-message-link.is-enabled, noscript .s-home-message-link
 {
   color: var(--color-accent);
   cursor: pointer;
   text-shadow: 0 var(--text-shadow-offset-y) var(--text-shadow-spread) var(--color-accent-text-shadow);
 }
-.s-home-message-link.is-enabled:hover
+.s-home-message-link.is-enabled:hover, noscript .s-home-message-link:hover
 {
   color: var(--color-accent-hover);
 }
