@@ -8,9 +8,6 @@ export default {
 
     intervalId: 0
   }),
-  computed: {
-    email: () => ["jobs", "@", "le", "kangouroo", ".", "net"].join("")
-  },
   methods: {
 
     disableAutoScroll: function() {
@@ -34,7 +31,7 @@ export default {
     init: function() {
 
       const options = {
-        stringsElement: ".s-home-message-content",
+        stringsElement: ".s-home-message-container",
         cursorChar: "▮",
         typeSpeed: 15,
         onComplete: () => this.onTypingComplete()
