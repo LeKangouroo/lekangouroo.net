@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.2.0](https://github.com/LeKangouroo/lekangouroo.me-v2/compare/v1.1.0...v1.2.0) (2021-01-30)
+
+
+### Features
+
+* render homepage even if JS has been disabled ([e330232](https://github.com/LeKangouroo/lekangouroo.me-v2/commit/e3302327841401a61bccde00005ee442e4c4715e))
+
 ## [1.1.0](https://github.com/LeKangouroo/lekangouroo.me-v2/compare/v1.0.0...v1.1.0) (2020-09-14)
 
 
