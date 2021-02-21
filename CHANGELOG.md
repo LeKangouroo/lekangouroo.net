@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.3.0](https://github.com/LeKangouroo/lekangouroo.me-v2/compare/v1.2.0...v1.3.0) (2021-02-21)
+
+
+### Features
+
+* add animation skip button ([1b217fc](https://github.com/LeKangouroo/lekangouroo.me-v2/commit/1b217fc77701d56e453a191c1be7eaabc615fc9b))
+
 ## [1.2.0](https://github.com/LeKangouroo/lekangouroo.me-v2/compare/v1.1.0...v1.2.0) (2021-01-30)
 
 
