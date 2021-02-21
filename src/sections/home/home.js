@@ -1,12 +1,18 @@
 import Typed from "typed.js";
 import events from "core/events.js";
 
+const TYPED_CURSOR_CHAR = "▮";
+const TYPED_SPEED = 15;
+
 export default {
 
   template: "#home-section-template",
   data: () => ({
 
-    intervalId: 0
+    intervalId: 0,
+    isAnimationComplete: false,
+    isAnimationSkipped: false,
+    typedInstance: undefined
   }),
   methods: {
 
@@ -21,7 +27,7 @@ export default {
     },
     enableLinks: function() {
 
-      const links = this.$refs.content.querySelectorAll(".s-home-message-link");
+      const links = this.$refs.container.querySelectorAll(".s-home-message-link");
 
       for (let link of links)
       {
@@ -32,18 +38,25 @@ export default {
 
       const options = {
         stringsElement: ".s-home-message-container",
-        cursorChar: "▮",
-        typeSpeed: 15,
+        cursorChar: TYPED_CURSOR_CHAR,
+        typeSpeed: TYPED_SPEED,
         onComplete: () => this.onTypingComplete()
       };
 
       this.enableAutoScroll();
-      new Typed('.s-home-message', options);
+      this.typedInstance = new Typed(".s-home-message--typed", options);
     },
     onTypingComplete: function() {
 
+      this.isAnimationComplete = true;
       this.enableLinks();
       this.disableAutoScroll();
+    },
+    skipAnimation: function() {
+
+      this.typedInstance.stop();
+      this.isAnimationSkipped = true;
+      this.onTypingComplete();
     }
   },
   mounted()

@@ -3,10 +3,27 @@
     <!-- @include ./home-message.html -->
   </div>
   <div class="l-crt">
-    <div class="l-crt-container">
-      <div class="l-crt-content" ref="content">
-        <span class="s-home-message"></span>
+    <div class="l-crt-container" ref="container">
+      <div class="l-crt-content" v-show="!isAnimationSkipped" ref="content">
+        <div class="s-home-message s-home-message--typed"></div>
+      </div>
+      <div class="l-crt-content" v-show="isAnimationSkipped">
+        <div class="s-home-message">
+          <!-- @include ./home-message.html -->
+        </div>
       </div>
     </div>
+  </div>
+  <div class="s-home-buttons">
+    <button
+      class="s-home-button s-home-button--skip"
+      :class="{'is-hidden': isAnimationComplete}"
+      :disabled="isAnimationComplete"
+      @click="skipAnimation">
+      <span class="s-home-button-background s-home-button-background--border">
+        <span class="s-home-button-background s-home-button-background--fill"></span>
+      </span>
+      <span class="s-home-button-label">Passer l'animation</span>
+    </button>
   </div>
 </section>
