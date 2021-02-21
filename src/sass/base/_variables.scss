@@ -18,6 +18,9 @@
   --color-scanline: #000A;
   --color-signature: #{$theme-color-3};
   --color-signature-text-shadow: black;
+  --color-button-border: #{rgba(lighten($theme-color-1, 40%), 0.1)};
+  --color-button-shadow: #{rgba(#000, 0.6)};
+  --color-button-text: #{darken($theme-color-1, 15%)};
 
   /*
    * Fonts
@@ -36,4 +39,10 @@
    */
   --text-shadow-offset-y: 0.2ch;
   --text-shadow-spread: 0.1ch;
+
+  /*
+   * Z-index
+   */
+  --z-index-content: 3;
+  --z-index-overlay: 4;
 }

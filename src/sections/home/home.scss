@@ -1,9 +1,12 @@
 .s-home
 {
   height: 100%;
+  position: relative;
 }
 .s-home-message
 {
+  display: inline;
+
   strong
   {
     color: var(--color-signature);
@@ -39,16 +42,96 @@
 {
   color: var(--color-accent-hover);
 }
+.s-home-buttons
+{
+  display: none;
+}
 
 @include tablet-portrait-and-up
 {
-  .s-home
-  {
-  }
 }
 @include desktop
 {
-  .s-home
+  .s-home-buttons
   {
+    display: flex;
+    justify-content: flex-end;
+
+    position: absolute;
+    z-index: var(--z-index-overlay);
+    bottom: 40px;
+    right: 40px;
+    left: 0;
+  }
+  .s-home-button
+  {
+    --home-button-transition-duration: 0.3s;
+    --home-button-transition-function: ease;
+    --home-button-border-radius: 30px;
+
+    all: unset;
+    border-radius: var(--home-button-border-radius);
+    cursor: pointer;
+    opacity: 1;
+    overflow: hidden;
+    position: relative;
+    transition: opacity var(--home-button-transition-duration) var(--home-button-transition-function),
+                transform var(--home-button-transition-duration) var(--home-button-transition-function);
+    text-shadow: none;
+    user-select: none;
+  }
+  .s-home-button.is-hidden
+  {
+    opacity: 0;
+    transform: translate(20%);
+  }
+  .s-home-button:hover
+  {
+    .s-home-button-label
+    {
+      color: var(--color-button-text);
+    }
+    .s-home-button-background--border
+    {
+      border-color: var(--color-text);
+    }
+    .s-home-button-background--fill
+    {
+      transform: translate(0) scale(1.02);
+    }
+  }
+  .s-home-button-background
+  {
+    border: 2px solid transparent;
+    border-radius: var(--home-button-border-radius);
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+  }
+  .s-home-button-background--border
+  {
+    border-color: var(--color-button-border);
+    box-shadow: 0 0 30px var(--color-button-shadow);
+    transition: border-color var(--home-button-transition-duration) var(--home-button-transition-function);
+  }
+  .s-home-button-background--fill
+  {
+    background: var(--color-text);
+    transform: translate(-102%) scale(1.02);
+    transition: transform var(--home-button-transition-duration) var(--home-button-transition-function);
+  }
+  .s-home-button-label
+  {
+    display: block;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.8rem;
+    padding: 15px 30px;
+    transition: color var(--home-button-transition-duration) var(--home-button-transition-function);
+
+    position: relative;
+    z-index: 2;
   }
 }
