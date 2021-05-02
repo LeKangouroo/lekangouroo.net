@@ -36,7 +36,7 @@
     "standard-version": "9.0.0",
     "through2": "4.0.2",
     "typed.js": "2.0.11",
-    "urijs": "1.19.2",
+    "urijs": "1.19.6",
     "vue": "2.6.12",
     "webpack": "4.44.1",
     "webpack-stream": "6.1.0",
