@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.3.1](https://github.com/LeKangouroo/lekangouroo.net/compare/v1.3.0...v1.3.1) (2021-05-02)
+
+
+### Bug Fixes
+
+* rewrite home message ([f4be91d](https://github.com/LeKangouroo/lekangouroo.net/commit/f4be91db5450ba35c7d19870026144122487cf44))
+
 ## [1.3.0](https://github.com/LeKangouroo/lekangouroo.me-v2/compare/v1.2.0...v1.3.0) (2021-02-21)
 
 
